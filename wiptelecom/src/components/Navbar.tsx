@@ -109,6 +109,13 @@ export default function NavBar() {
                   </button>
                 ))}
               </div>
+              <div className="space-y-2 py-6">
+                <button onClick={() => {
+                      handleNavigation("http://www.wiptelecom.net.br/central/login.php");
+                      setMobileMenuOpen(false);
+                    }} className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"/>
+                    Central do Cliente
+              </div>
             </div>
           </div>
         </DialogPanel>
