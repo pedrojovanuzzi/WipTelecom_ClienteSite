@@ -87,8 +87,7 @@ export default function HeroSection() {
               src={BotImg}
               width={2432}
               height={1442}
-              onClick={click}
-              className="w-[60rem] cursor-pointer rounded-lg bg-white/6 shadow-2xl ring-2 ring-white/55"
+              className="w-[60rem] rounded-lg bg-white/6 shadow-2xl ring-2 ring-white/55"
             />
           </div>
         </div>
