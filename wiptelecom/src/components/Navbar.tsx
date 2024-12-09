@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Sobre', href: '/about' },
   { name: 'Contato', href: '/contact' },
   { name: 'Contrato do Cliente', href: '/contrato' },
+  { name: 'Central do Cliente', href: 'http://www.wiptelecom.net.br/central/login.php', central: true},
 ]
 
 export default function NavBar() {
@@ -17,6 +18,11 @@ export default function NavBar() {
   const navigate = useNavigate();
 
   const handleNavigation = (href: string) => {
+    if (href.startsWith('http://') || href.startsWith('https://')) {
+      window.location.href = href;
+      return;
+    }
+  
     if (href === '#planos') {
       navigate('/');
       setTimeout(() => {
@@ -32,9 +38,10 @@ export default function NavBar() {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      navigate(href);
+      navigate(href); // URLs internas
     }
   };
+  
   
 
   return (
@@ -65,7 +72,7 @@ export default function NavBar() {
             <button
               key={item.name}
               onClick={() => handleNavigation(item.href)}
-              className="text-sm/6 font-semibold text-white"
+              className={item.central ? "text-sm/6 bg-zinc-800 p-3 rounded-md hover:bg-zinc-600 hover:transition-all font-semibold text-white" : "text-sm/6 font-semibold text-white"}
             >
               {item.name}
             </button>
@@ -103,18 +110,11 @@ export default function NavBar() {
                       handleNavigation(item.href);
                       setMobileMenuOpen(false);
                     }}
-                    className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"
+                    className={item.central ? "-mx-3 block w-full text-left rounded-lg px-3 bg-zinc-800 p-3  hover:bg-zinc-600 hover:transition-all py-2 text-base/7 font-semibold text-white hover:bg-gray-800" : "-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"}
                   >
                     {item.name}
                   </button>
                 ))}
-              </div>
-              <div className="space-y-2 py-6">
-                <button onClick={() => {
-                      handleNavigation("http://www.wiptelecom.net.br/central/login.php");
-                      setMobileMenuOpen(false);
-                    }} className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"/>
-                    Central do Cliente
               </div>
             </div>
           </div>
