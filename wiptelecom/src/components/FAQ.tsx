@@ -16,15 +16,15 @@ const faqs = [
   },
   {
     question: "Como posso ser atendido?",
-    answer: "Através do nosso atendimento digital via chat (WhatsApp), também fora do horário de expediente, que o auxilia com procedimentos de resolução de problemas simples na conexão. Os não resolvidos são encaminhados imediatamente para um técnico plantonista.",
+    answer: "Para pagamentos online, contamos com atendimento 24h via Chat Bot: (14)99656-1608 Atendemos pelo WhatsApp (14)98233-2963, das 8h às 18h, para suporte técnico e financeiro.  Após as 18h até as 20h, auxiliamos com soluções simples de conexão, casos não resolvidos são encaminhados para visita técnica em dia útil.",
   },
   {
     question: "Como faço para retirar meu boleto?",
-    answer: "Retire você mesmo seu boleto via central do assinante ou WhatsApp, de forma simples e descomplicada.",
+    answer: "Pix ou Boleto: Retire você mesmo seu boleto ou Pix via WhatsApp em nosso Bot (14) 99656-1608, de forma simples e descomplicada. \n Loja Física: Caso prefira, visite nossa loja para a impressão de seus boletos e tê-los em mãos.",
   },
   {
     question: "Consigo fazer meu cadastro sem ir até a empresa?",
-    answer: "Sim! Faça seu cadastro por telefone ou site e seja nosso cliente sem sair de casa, nós levamos o contrato até você.",
+    answer: "Sim! Faça seu cadastro e assinatura pelo Chat Bot e seja nosso cliente sem sair de casa.",
   },
 ]
 
