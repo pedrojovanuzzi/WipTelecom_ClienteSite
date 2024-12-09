@@ -110,7 +110,7 @@ export default function NavBar() {
                       handleNavigation(item.href);
                       setMobileMenuOpen(false);
                     }}
-                    className={item.central ? "-mx-3 block w-full text-left rounded-lg px-3 bg-zinc-800 p-3  hover:bg-zinc-600 hover:transition-all py-2 text-base/7 font-semibold text-white hover:bg-gray-800" : "-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"}
+                    className={item.central ? "-mx-3 block w-full text-left rounded-lg px-3 bg-zinc-800 p-3  hover:bg-zinc-600 hover:transition-all py-2 text-base/7 font-semibold text-white " : "-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"}
                   >
                     {item.name}
                   </button>
