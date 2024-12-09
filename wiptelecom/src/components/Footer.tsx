@@ -1,4 +1,4 @@
-import icon from "../imgs/icon.png";
+import icon from "../imgs/icon_natal.png";
 import { MdOutlinePhone } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
