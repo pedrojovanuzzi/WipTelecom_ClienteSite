@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
 import { ChevronUpDownIcon } from '@heroicons/react/16/solid'
@@ -10,7 +8,10 @@ const people = [
   { id: 2, name: 'Jacuba' },
   { id: 3, name: 'Santa Izabel' },
   { id: 4, name: 'Marilândia' },
-  { id: 5, name: 'Santelmo' }
+  { id: 5, name: 'Santelmo' },
+  { id: 6, name: 'San Francisco' },
+  { id: 7, name: 'Ribeirão Bonito' },
+  { id: 8, name: 'Jardim Primavera' },
 ]
 
 export default function SelectLocation() {

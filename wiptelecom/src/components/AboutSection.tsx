@@ -22,19 +22,15 @@ export default function AboutSection() {
             <div className="lg:pr-8">
               <h2 className="text-pretty text-2xl font-semibold tracking-tight text-gray-200">Nossa missão</h2>
               <p className="mt-6 text-base/7 text-gray-300">              
-                Somos um provedor de Internet banda larga que, no ano de 2014,
-                trouxe em primeira mão para a cidade de Arealva a tecnologia de conexão em Fibra Óptica, 
-                oferecendo internet de qualidade, velocidade, segurança para os nossos clientes. 
-                A agilidade e a excelência no atendimento das demandas de um mercado cada vez mais exigente e a 
-                busca constante por superar expectativas fazem da Wip Telecom a escolha certa para quem precisa 
-                realmente de um serviço eficiente.
+              Desde 2014, a Wip Telecom tem o orgulho de ser pioneira na implantação da tecnologia de conexão em Fibra Óptica na cidade de Arealva, 
+              entregando internet de alta qualidade, velocidade e segurança para nossos clientes. Nosso compromisso é atender com agilidade e 
+              excelência as demandas de um mercado cada vez mais exigente, superando expectativas e garantindo um serviço eficiente.
               </p>
               <p className="mt-8 text-base/7 text-gray-300">
-              Ao longo destes anos a nossa empresa vem conquistando a confiança, 
-              fidelidade e credibilidade no mercado de trabalho, se preocupando 
-              primeiramente com a qualidade de nosso serviço e produto. A nossa 
-              família Wip Telecom tem sempre o maior prazer em atender a sua família, 
-              venha fazer parte você também, sinta-se em casa. Wip Telecom sempre com você!
+              Ao longo destes 10 anos, conquistamos a confiança, fidelidade e credibilidade de 
+              nossos clientes, sempre priorizando a qualidade de nossos produtos e serviços. Aqui na Wip Telecom, consideramos cada cliente 
+              parte da nossa família. 
+              Venha fazer parte também e sinta-se em casa! Wip Telecom, sempre com você!
               </p>
             </div>
             <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
