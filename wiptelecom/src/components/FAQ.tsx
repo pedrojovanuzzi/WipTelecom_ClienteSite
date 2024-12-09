@@ -23,10 +23,6 @@ const faqs = [
     answer: "Retire você mesmo seu boleto via central do assinante ou WhatsApp, de forma simples e descomplicada.",
   },
   {
-    question: "O que faço para liberar minha internet?",
-    answer: "Liberação de internet, redução ou desbloqueio a qualquer hora. Em caso de problemas de pagamento com boletos, você pode liberar sua internet de forma emergencial por 72 horas, para não ficar sem. Este benefício é muito utilizado quando o cliente esquece da pagar o boleto e o paga muitos dias depois da data de vencimento sem que haja tempo hábil para integração entre os sistemas das agências bancárias e o da WipTelecom.",
-  },
-  {
     question: "Consigo fazer meu cadastro sem ir até a empresa?",
     answer: "Sim! Faça seu cadastro por telefone ou site e seja nosso cliente sem sair de casa, nós levamos o contrato até você.",
   },

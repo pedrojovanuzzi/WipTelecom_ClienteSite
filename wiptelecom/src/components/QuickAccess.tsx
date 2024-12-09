@@ -1,24 +1,28 @@
 import {
     WifiIcon,
-    LockOpenIcon,
     DocumentTextIcon,
     UsersIcon,
   } from '@heroicons/react/24/outline'
   
+  import { FaRobot } from "react-icons/fa";
+
+
   const actions = [
     {
-      title: '2º Via do Boleto',
-      href: 'http://www.wiptelecom.net.br/central/login.php',
+      title: 'Fatura',
+      href: 'https://wa.me/message/MWHGELKC45WDN1',
       icon: DocumentTextIcon,
       iconForeground: 'text-teal-700',
       iconBackground: 'bg-teal-50',
+      text: "Solicite seu Boleto"
     },
     {
-      title: 'Auto Desbloqueio',
-      href: 'http://www.wiptelecom.net.br/central/login.php',
-      icon: LockOpenIcon,
+      title: 'Whatsapp Bot',
+      href: 'https://wa.me/message/MWHGELKC45WDN1',
+      icon: FaRobot,
       iconForeground: 'text-purple-700',
       iconBackground: 'bg-purple-50',
+      text: "Pagamento Via Pix"
     },
     {
       title: 'Central do Assinante',
@@ -26,6 +30,7 @@ import {
       icon: UsersIcon,
       iconForeground: 'text-sky-700',
       iconBackground: 'bg-sky-50',
+      text: "Retire sua Nota Fiscal"
     },
     {
       title: 'Teste de Velocidade',
@@ -33,6 +38,7 @@ import {
       icon: WifiIcon,
       iconForeground: 'text-yellow-700',
       iconBackground: 'bg-yellow-50',
+      text: "Faça o Teste de Velocidade"
     }
   ]
   
@@ -74,7 +80,7 @@ import {
                 </a>
               </h3>
               <p className="mt-2 text-sm text-gray-200">
-                Clique para acessar
+                {action.text}
               </p>
             </div>
             <span

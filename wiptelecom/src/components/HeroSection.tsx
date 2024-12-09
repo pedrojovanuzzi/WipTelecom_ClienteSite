@@ -1,7 +1,18 @@
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import BotImg from "../imgs/bot_img.png";
+import PopUpNew from './PopUpNew';
+import { useState } from 'react';
+
 
 export default function HeroSection() {
+
+  const [isClicked, setIsClicked] = useState(false);
+
+  function click() {
+    setIsClicked(prev => !prev);
+  }
+
+
   return (
     <div className="relative isolate overflow-hidden bg-gray-900">
       <svg
@@ -43,7 +54,8 @@ export default function HeroSection() {
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
           <div className="mt-24 sm:mt-32 lg:mt-16">
-            <a href="#" className="inline-flex space-x-6">
+            <a onClick={click} className="inline-flex space-x-6 cursor-pointer">
+            {isClicked && <PopUpNew setIsClicked={setIsClicked} />}
               <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm/6 font-semibold text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
                 Novo
               </span>
@@ -75,7 +87,8 @@ export default function HeroSection() {
               src={BotImg}
               width={2432}
               height={1442}
-              className="w-[60rem] rounded-lg bg-white/6 shadow-2xl ring-2 ring-white/55"
+              onClick={click}
+              className="w-[60rem] cursor-pointer rounded-lg bg-white/6 shadow-2xl ring-2 ring-white/55"
             />
           </div>
         </div>

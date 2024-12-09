@@ -1,3 +1,10 @@
+import img1 from "../imgs/About_IMGS/1.avif";
+import img2 from "../imgs/About_IMGS/2.avif";
+import img3 from "../imgs/About_IMGS/3.avif";
+import img4 from "../imgs/About_IMGS/4.avif";
+
+
+
 export default function AboutSection() {
     return (
       <div className="overflow-hidden bg-gray-900 py-24 sm:py-32">
@@ -35,28 +42,28 @@ export default function AboutSection() {
                 <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline outline-1 -outline-offset-1 outline-black/10">
                   <img
                     alt=""
-                    src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                    src={img1}
                     className="block size-full object-cover"
                   />
                 </div>
                 <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                   <img
                     alt=""
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                    src={img2}
                     className="block size-full object-cover"
                   />
                 </div>
                 <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline outline-1 -outline-offset-1 outline-black/10">
                   <img
                     alt=""
-                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                    src={img3}
                     className="block size-full object-cover"
                   />
                 </div>
                 <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                   <img
                     alt=""
-                    src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                    src={img4}
                     className="block size-full object-cover"
                   />
                 </div>

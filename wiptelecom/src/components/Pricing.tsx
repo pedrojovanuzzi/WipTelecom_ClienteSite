@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Radio, RadioGroup } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/20/solid'
 
 
@@ -51,7 +50,7 @@ function classNames(...classes: string[]) {
 }
 
 export default function Example() {
-  const [frequency, setFrequency] = useState(frequencies[0])
+  const [frequency] = useState(frequencies[0])
 
   return (
     <div className="bg-gray-900 py-24 sm:py-32">
@@ -70,8 +69,8 @@ export default function Example() {
             <div
               key={tier.id}
               className={classNames(
-                tier.mostPopular ? 'bg-white/5 ring-2 ring-indigo-500' : 'ring-1 ring-white/10',
-                'rounded-3xl p-8 xl:p-10',
+                tier.mostPopular ? 'bg-white/10 ring-2 ring-indigo-500' : 'ring-2 ring-white/10',
+                'rounded-3xl p-8',
               )}
             >
               <div className="flex items-center justify-between gap-x-4">
@@ -79,8 +78,8 @@ export default function Example() {
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="rounded-full bg-indigo-500 px-2.5 py-1 text-xs/5 font-semibold text-white">
-                    Mais Popular
+                  <p className="rounded-lg ring-1 ring-white bg-indigo-500 px-1 text-center py-1 text-xs/5 font-semibold text-white">
+                    Mais Vendido
                   </p>
                 ) : null}
               </div>
