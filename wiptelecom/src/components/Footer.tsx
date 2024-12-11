@@ -24,7 +24,7 @@ const navigation = {
       { icon:<MdOutlinePhone className="inline"/> , name: '(14) 3296-1608'},
       { icon:<IoPhonePortraitOutline className="inline"/> , name: '(14) 98233-2963'},
       { icon:<IoPhonePortraitOutline className="inline"/> , name: '(14) 99656-1608'},
-      { icon:<CiMail className="md:inline-block hidden"/> , name: 'wiptelecom@wiptelecom.net.br'},
+      { icon:<CiMail className="md:inline-block hidden"/> , name: <p className="hidden sm:inline-block">wiptelecom@wiptelecom.net.br</p>},
     ],
     social: [
       {
