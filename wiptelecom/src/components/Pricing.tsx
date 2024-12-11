@@ -10,7 +10,7 @@ const tiers = [
   {
     name: 'BASICO',
     id: 'tier-basic',
-    href: `'https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Básico%20de%20R$89,90!%22&type=phone_number&app_absent=0`,
+    href: `https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Básico%20de%20R$89,90!%22&type=phone_number&app_absent=0`,
     price: { monthly: 'R$89,90'},
     description: 'Bom para até 7 Dispositivos',
     features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 7 dispositivos distribuídos entre wifi e cabo simultâneos'],
