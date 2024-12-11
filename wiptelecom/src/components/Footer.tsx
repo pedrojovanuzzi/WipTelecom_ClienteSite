@@ -114,7 +114,7 @@ const navigation = {
                   <h3 className="text-sm/6 font-semibold text-white">Contato</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.company.map((item) => (
-                      <li key={item.name}>
+                      <li>
                         <a className="text-sm/6 text-gray-400 hover:text-white">
                         {item.icon} {item.name}
                         </a>
