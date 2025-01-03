@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useNavigate } from 'react-router'
-import icon from "../imgs/icon_anonovo.png";
+import icon from "../imgs/icon.png";
 
 const navigation = [
   { name: 'Início', href: '/' },
