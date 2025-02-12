@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Sobre', href: '/about' },
   { name: 'Contato', href: '/contact' },
   { name: 'Contrato do Cliente', href: '/contrato' },
-  { name: 'Central do Cliente', href: 'https://www.wiptelecom.net.br/central/login.php', central: true},
+  { name: 'Central do Cliente', href: 'https://mk.wiptelecomunicacoes.com.br/central/login.hhvm', central: true},
 ]
 
 export default function NavBar() {
