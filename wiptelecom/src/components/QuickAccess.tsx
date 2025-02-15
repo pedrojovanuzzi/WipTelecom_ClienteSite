@@ -26,7 +26,7 @@ import {
     },
     {
       title: 'Central do Assinante',
-      href: 'http://www.wiptelecom.net.br/central/login.php',
+      href: 'https://mk.wiptelecomunicacoes.com.br/central/login.hhvm',
       icon: UsersIcon,
       iconForeground: 'text-sky-700',
       iconBackground: 'bg-sky-50',
