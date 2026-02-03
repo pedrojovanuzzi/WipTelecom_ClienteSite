@@ -1,17 +1,15 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
-import BotImg from "../imgs/bot_img.png";
-import PopUpNew from './PopUpNew';
-import { useState } from 'react';
-
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
+// import BotImg from "../imgs/bot_img.png";
+import TotemImg from "../imgs/totemImg.png";
+import PopUpNew from "./PopUpNew";
+import { useState } from "react";
 
 export default function HeroSection() {
-
   const [isClicked, setIsClicked] = useState(false);
 
   function click() {
-    setIsClicked(prev => !prev);
+    setIsClicked((prev) => !prev);
   }
-
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900">
@@ -37,7 +35,12 @@ export default function HeroSection() {
             strokeWidth={0}
           />
         </svg>
-        <rect fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" width="100%" height="100%" strokeWidth={0} />
+        <rect
+          fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+        />
       </svg>
       <div
         aria-hidden="true"
@@ -46,7 +49,7 @@ export default function HeroSection() {
         <div
           style={{
             clipPath:
-              'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+              "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
           }}
           className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
         />
@@ -55,43 +58,49 @@ export default function HeroSection() {
         <div className="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
           <div className="mt-24 sm:mt-32 lg:mt-16">
             <a onClick={click} className="inline-flex space-x-6 cursor-pointer">
-            {isClicked && <PopUpNew setIsClicked={setIsClicked} />}
+              {isClicked && <PopUpNew setIsClicked={setIsClicked} />}
               <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm/6 font-semibold text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
                 Novo
               </span>
               <span className="inline-flex items-center space-x-2 text-sm/6 font-medium text-gray-300">
-                <span>Bot</span>
-                <ChevronRightIcon aria-hidden="true" className="size-5 text-gray-500" />
+                <span>Totem</span>
+                <ChevronRightIcon
+                  aria-hidden="true"
+                  className="size-5 text-gray-500"
+                />
               </span>
             </a>
           </div>
           <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-            Whatsapp Bot
+            Totem Auto Atendimento
           </h1>
           <p className="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">
-            Pegue seus Boletos e Pix de forma automatica a qualquer hora do dia!
+            O Totem de Auto Atendimento é uma ferramenta desenvolvida para
+            otimizar o atendimento ao cliente, oferecendo suporte rápido e
+            eficiente para diversas necessidades.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
+            {/* <a
               href="https://wa.me/message/MWHGELKC45WDN1"
               className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               Acessar
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <img
               alt="App screenshot"
-              src={BotImg}
+              src={TotemImg}
               width={2432}
               height={1442}
-              className="w-[60rem] rounded-lg bg-white/6 shadow-2xl ring-2 ring-white/55"
+              // className="w-[60rem] rounded-lg bg-white/6 shadow-2xl ring-2 ring-white/55"
+              className="w-[40rem] rounded-lg bg-white/6"
             />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
