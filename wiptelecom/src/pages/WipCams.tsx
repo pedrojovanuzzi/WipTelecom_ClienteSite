@@ -12,7 +12,6 @@ export const WipCams = () => {
       <NavBar />
       <ServiceHero
         title="Wip Cams"
-        headline="Muito mais segurança para a sua casa ou empresa."
         features={[
           'Gravação em nuvem',
           'Câmeras ao vivo e gravações pelo celular',
