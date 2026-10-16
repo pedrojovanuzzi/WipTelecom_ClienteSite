@@ -12,7 +12,6 @@ export const WatchTV = () => {
       <NavBar />
       <ServiceHero
         title="Watch TV"
-        headline="Aqui você escolhe quando pausar."
         text="O streaming da Wip: canais, filmes e séries para assistir em qualquer lugar do Brasil, no seu dispositivo."
         features={[
           'Assista na TV, no celular, no tablet ou no computador',

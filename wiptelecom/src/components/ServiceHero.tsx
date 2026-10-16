@@ -11,7 +11,7 @@ export type ServiceOffer = {
 
 type Props = {
   title: string
-  headline: string
+  headline?: string
   text?: string
   features?: string[]
   offers: ServiceOffer[]
@@ -24,7 +24,7 @@ export default function ServiceHero({ title, headline, text, features, offers, i
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-8">
         <div>
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">{title}</h1>
-          <p className="mt-4 text-2xl text-white sm:text-3xl">{headline}</p>
+          {headline ? <p className="mt-4 text-2xl text-white sm:text-3xl">{headline}</p> : null}
           {text ? <p className="mt-4 text-lg/8 text-gray-300">{text}</p> : null}
           {features ? (
             <ul role="list" className="mt-6 space-y-2 text-base/7 text-gray-300">
