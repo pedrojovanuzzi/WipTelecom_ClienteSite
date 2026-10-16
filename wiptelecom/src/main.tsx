@@ -9,6 +9,8 @@ import { Contract } from "./pages/Contract";
 import NotFound from "./pages/NotFound";
 import PoliticsEmail from "./pages/PoliticsEmail";
 import PoliticsApp from "./pages/PoliticsApp";
+import WatchTV from "./pages/WatchTV";
+import WipCams from "./pages/WipCams";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -29,6 +31,8 @@ root.render(
         />
         <Route path="/politica-de-privacidade-app" element={<PoliticsApp />} />
         <Route path="/politica" element={<PoliticsApp />} />
+        <Route path="/watch-tv" element={<WatchTV />} />
+        <Route path="/wip-cams" element={<WipCams />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

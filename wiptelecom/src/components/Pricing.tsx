@@ -37,10 +37,10 @@ const tiers = [
   {
     name: 'TURBO',
     id: 'tier-turbo',
-    href: 'https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Turbo%20de%20R$159,90!%22&type=phone_number&app_absent=0',
-    price: { monthly: 'R$159,90'},
-    description: 'Bom para até 15 Dispositivos',
-    features: ['IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 15 dispositivos distribuídos entre wifi e cabo simultâneos'],
+    href: 'https://api.whatsapp.com/send/?phone=5514982332963&text=%22Ol%C3%A1,%20quero%20Contratar%20o%20Plano%20Turbo%20%2B%20Watch%20TV%20de%20R$189,90!%22&type=phone_number&app_absent=0',
+    price: { monthly: 'R$189,90'},
+    description: 'Bom para até 15 Dispositivos + Watch TV grátis',
+    features: ['Watch TV inclusa GRATUITAMENTE', 'IPV6 incluso', 'Wi-Fi 5Ghz incluso', 'Jogue online e multiplayer com tranquilidade', 'Ideal para até 15 dispositivos distribuídos entre wifi e cabo simultâneos'],
     mostPopular: false,
   },
 ]

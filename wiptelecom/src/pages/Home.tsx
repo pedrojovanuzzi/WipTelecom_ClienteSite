@@ -3,6 +3,7 @@ import NavBar from "../components/Navbar";
 
 import HeroSection from '../components/HeroSection'
 import Pricing from '../components/Pricing'
+import Services from '../components/Services'
 import Benefits from '../components/Benefits'
 import Cities from '../components/Cities'
 import FAQ from '../components/FAQ'
@@ -15,6 +16,7 @@ export const Home = () => {
         <NavBar/>
         <HeroSection/>
         <Pricing/>
+        <Services/>
         <Benefits/>
         <Cities/>
         <FAQ/>
